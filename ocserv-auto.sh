@@ -7,7 +7,7 @@
 # Website: https://www.stunnel.info                #
 #                                                  #
 ####################################################
-
+yum install -y -q net-tools NetworkManager bind-utils
 # 检测是否是root用户
 if [[ $(id -u) != "0" ]]; then
     printf "\e[42m\e[31mError: You must be root to run this install script.\e[0m\n"
